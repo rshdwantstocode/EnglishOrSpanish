@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: #FDFFC2;
+}
+
+.dog-meme{
+    background-image: url(./media/dogmeme.jpg);
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.outer-container{
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-button, .click-container{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.english-button, .spanish-button, .click-me {
+    width: 150px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.english-button:hover, .spanish-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.isVisible {
+    opacity: 0;
+}
